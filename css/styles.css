@@ -638,6 +638,7 @@ button {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 72px 24px 24px 24px;
 }
 .modal-close-btn {
   position: absolute;
@@ -671,28 +672,88 @@ button {
   pointer-events: none;
 }
 /* MODAL FORM */
-
-.contact-form-field-wrapper,
-.contact-form-checkbox-wrapper {
-  display: block;
-  margin-bottom: 20px;
+.contact-form-input-field {
+  margin-bottom: 8px;
 }
-.contact-form-field-desc {
+
+.contact-form-label {
   display: block;
+  margin-bottom: 4px;
   font-size: 12px;
-  color: var(--primary-text-color-theme-light);
-  margin-bottom: 10px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: var(--icons-color);
 }
 .contact-form-input-wrapper {
   position: relative;
-  display: block;
 }
-
 .contact-form-input {
   width: 100%;
   height: 40px;
-  border: 1px solid #555555;
+  border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
+  background-color: transparent;
   padding-left: 38px;
-  transition: border-color var(--transition-duration-and-func);
+  outline: none;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.contact-form-input:hover,
+.contact-form-input:focus,
+.contact-form-user-text-area:hover,
+.contact-form-user-text-area:focus {
+  border-color: #4d5ae5;
+}
+.contact-form-caption {
+  color: var(--primary-text-color-theme-light);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.02em;
+  margin-bottom: 16px;
+}
+.contact-form-icon {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  transform: translate(0, -50%);
+  fill: #2e2f42;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.contact-form-input:hover + .contact-form-icon,
+.contact-form-input:focus + .contact-form-icon {
+  fill: #4d5ae5;
+}
+.contact-form-textarea-field {
+  margin-bottom: 16px;
+}
+.contact-form-user-text-area {
+  width: 100%;
+  resize: none;
+  outline: none;
+  height: 120px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  padding: 8px 16px;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
+}
+.contact-form-checkbox-field {
+  margin-bottom: 24px;
+}
+.checkbox-stilisation {
+  width: 16px;
+  height: 16px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 2px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  fill: transparent;
+}
+
+.privicy-input:checked .contact-form-label > .checkbox-stilisation {
+  background-color: var(--hover-state-color);
 }
