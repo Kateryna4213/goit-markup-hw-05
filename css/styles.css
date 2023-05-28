@@ -754,6 +754,15 @@ button {
   fill: transparent;
 }
 
-.privicy-input:checked .contact-form-label > .checkbox-stilisation {
+.privicy-input:checked + .contact-form-label .checkbox-stilisation {
   background-color: var(--hover-state-color);
+  border: none;
+  fill: var(--primary-text-color-theme-dark);
+  border-color: var(--hover-state-color);
+}
+.contact-form-label-link {
+  color: var(--accent-color);
+}
+.privicy-input {
+  position: absolute;
 }
