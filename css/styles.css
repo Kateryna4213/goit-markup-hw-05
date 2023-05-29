@@ -546,7 +546,6 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 16px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -559,6 +558,7 @@ button {
 }
 .subscribe-field-icon {
   fill: #fff;
+  margin-left: 16px;
 }
 .subscribe-field-btn:hover,
 .subscribe-field-btn:focus {
@@ -744,7 +744,7 @@ button {
   border-radius: 4px;
   background-color: transparent;
   padding-left: 38px;
-  outline: none;
+  outline: transparent;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contact-form-input:hover,
