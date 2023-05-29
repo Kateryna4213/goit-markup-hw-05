@@ -525,9 +525,27 @@
             </li>
           </ul>
         </div>
+        <div class="subscribe-field">
+          <p class="footer-box-text">Subscribe</p>
+          <form class="subscribe-field-box">
+            <label class="subscribe-field-box-label">
+              <input
+                type="email"
+                class="subscribe-field-input"
+                name="user-email"
+                placeholder="E-mail"
+            /></label>
+            <button type="button" class="subscribe-field-btn">
+              Subscribe
+              <svg width="24px" height="20px" class="subscribe-field-icon">
+                <use href="./images/icons.svg#icon-telegram-sbsc"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
-    <div class="backdrop" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-close-btn" data-modal-close>
           <svg class="icon-modal-closing" width="8" height="8">
@@ -597,8 +615,8 @@
           </div>
           <div class="contact-form-checkbox-field">
             <input
-              id="user-privicy"
-              class="privicy-input visually-hidden"
+              id="user-privacy"
+              class="privacy-input visually-hidden"
               type="checkbox"
               value="true"
               name="user-privacy"
